@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">欢迎使用</string>
+  <string name="hello2">欢迎操作</string>
+  <string name="app_name">Client</string>
+  
+  <string name="str_button3">连接服务器</string>
+  <string name="str_button4">发送命令</string>
+  
+  <string name="str_servo1">左</string>
+  <string name="str_servo2">右</string>
+  <string name="str_servo3">上</string>
+  <string name="str_servo4">下</string>
+  <string name="str_servo5">90</string>
+  
+  <string name="str_mbutton1">绘路线图</string>
+  <string name="str_mbutton2">手动控制</string>
+  <string name="str_mbutton3">90</string>
+  <string name="voice">语音</string>
+  <string name="hide">隐藏</string>
+</resources>

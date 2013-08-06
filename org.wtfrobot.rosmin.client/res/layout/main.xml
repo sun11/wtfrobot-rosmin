@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/dBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bl" />
+
+    <ImageButton
+        android:id="@+id/dB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/dBL"
+        android:src="@drawable/b" />
+
+    <ImageButton
+        android:id="@+id/dR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dBR"
+        android:layout_toRightOf="@+id/dB"
+        android:src="@drawable/r" />
+
+    <ImageButton
+        android:id="@+id/p0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dB"
+        android:layout_toLeftOf="@id/dR"
+        android:src="@drawable/p0" />
+
+    <ImageButton
+        android:id="@+id/dL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dBL"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/l" />
+
+    <ImageButton
+        android:id="@+id/dBR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/dB"
+        android:src="@drawable/br" />
+
+    <ImageButton
+        android:id="@+id/dFL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dL"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/fl" />
+
+    <ImageButton
+        android:id="@+id/dFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dR"
+        android:layout_toRightOf="@+id/dB"
+        android:src="@drawable/fr" />
+
+    <ImageButton
+        android:id="@+id/dF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dR"
+        android:layout_toLeftOf="@+id/dR"
+        android:src="@drawable/f" >
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/servoValue01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/servo2"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="@string/str_servo5"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/servoValue02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="@string/str_servo5"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/servoLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/servoValue01"
+        android:layout_toLeftOf="@+id/servo1"
+        android:text="@string/str_servo1"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/servoRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/servoValue01"
+        android:layout_alignParentRight="true"
+        android:text="@string/str_servo2"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/servoUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/servoValue02"
+        android:layout_alignParentRight="true"
+        android:text="@string/str_servo3"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/servoDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/servoValue02"
+        android:layout_toLeftOf="@+id/servo2"
+        android:text="@string/str_servo4"
+        android:textSize="23dp" >
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/servo1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/servoValue01"
+        android:layout_toLeftOf="@+id/servoRight"
+        android:max="160"
+        android:progress="80" />
+
+    <SeekBar
+        android:id="@+id/servo2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/servoValue02"
+        android:layout_toLeftOf="@+id/servoUp"
+        android:max="160"
+        android:progress="80" />
+
+    <LinearLayout
+        android:id="@+id/ConnectLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/myEditText2"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="192.168.43."
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/myButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_button3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/VoiceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dFR"
+        android:layout_alignRight="@+id/servo1"
+        android:layout_marginRight="65dp"
+        android:minHeight="100dp"
+        android:minWidth="120dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/VoiceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:minHeight="80dp"
+            android:text="语音控制"
+            android:width="130dp" />
+
+        <TextView
+            android:id="@+id/PerformanceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

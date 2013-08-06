@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">欢迎使用</string>
+  <string name="app_name">Server</string>
+  <string name="no">无指令</string>
+  
+  <string name="str_button1">开启Socket Server</string>
+  <string name="str_button2">停止 Socket Server</string>
+  <string name="str_button3">启动ColorTrack</string>
+  <string name="str_button4"></string>
+</resources>
